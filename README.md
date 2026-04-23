@@ -70,29 +70,48 @@ However, Logistic Regression was selected for deployment due to its faster infer
 This reflects a practical trade-off between performance and efficiency.
 
 ----
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 Twitter-Sentiment-Analysis/
 │
-├── data/                 # Dataset files
+├── assets/
+│   ├── all_confusion_matrices.png
+│   ├── lstm_accuracy.png
+│   ├── model_accuracy_comparison.png
+│
+├── data/ (not uploaded to GitHub)
+│
+├── models/
+│   ├── sentiment_model.pkl
+│   ├── tfidf_vectorizer.pkl
+│
 ├── src/
-│   ├── data_loader/      # Data loading scripts
-│   ├── preprocessing/    # Text cleaning
-│   ├── models/           # ML & DL models
-│   ├── evaluation/       # Metrics
-│   ├── visualization/    # Plots
+│   ├── data_loader/
+│   │   ├── combine_data.py
+│   │   ├── load_apple_crowdflower.py
+│   │   ├── load_sentiment140.py
+│   │
+│   ├── preprocessing/
+│   │   ├── preprocess.py
+│   │
+│   ├── models/
+│   │   ├── train_ml.py
+│   │   ├── train_deep_model.py
+│   │   ├── textblob_model.py
+│   │
+│   ├── evaluation/
+│   │   ├── evaluate.py
+│   │
+│   ├── visualization/
+│       ├── plots.py
 │
-├── models/               # Saved models
-├── visuals/              # Generated graphs
-│
-├── main.py               # Training pipeline
-├── predict.py            # Prediction script
+├── app.py
+├── main.py
+├── predict.py
 ├── requirements.txt
-└── README.md
-
-----
-
+├── README.md
+└── LICENSE
+```
 ## ⚙️ Tech Stack
 
 - Python  
