@@ -72,45 +72,32 @@ This reflects a practical trade-off between performance and efficiency.
 ----
 ## 📁 Project Structure
 
+```text
 Twitter-Sentiment-Analysis/
-│
 ├── assets/
 │   ├── all_confusion_matrices.png
 │   ├── lstm_accuracy.png
-│   ├── model_accuracy_comparison.png
+│   └── model_accuracy_comparison.png
 │
 ├── data/ (not uploaded to GitHub)
 │
 ├── models/
 │   ├── sentiment_model.pkl
-│   ├── tfidf_vectorizer.pkl
+│   └── tfidf_vectorizer.pkl
 │
 ├── src/
 │   ├── data_loader/
-│   │   ├── combine_data.py
-│   │   ├── load_apple_crowdflower.py
-│   │   ├── load_sentiment140.py
-│   │
 │   ├── preprocessing/
-│   │   ├── preprocess.py
-│   │
 │   ├── models/
-│   │   ├── train_ml.py
-│   │   ├── train_deep_model.py
-│   │   ├── textblob_model.py
-│   │
 │   ├── evaluation/
-│   │   ├── evaluate.py
-│   │
-│   ├── visualization/
-│       ├── plots.py
+│   └── visualization/
 │
 ├── app.py
 ├── main.py
 ├── predict.py
 ├── requirements.txt
-├── README.md
 └── LICENSE
+```
 ```
 ## ⚙️ Tech Stack
 
